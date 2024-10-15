@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BookLibraryAPI.Models;
+using BookLibraryAPI.Mappings;
 
 namespace BookLibraryAPI.Controllers
 {
@@ -17,10 +18,31 @@ namespace BookLibraryAPI.Controllers
 
         // GET: api/books
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Book>>> GetBooks()
+        public async Task<ActionResult<IEnumerable<Book>>> GetBooks(string author = null, string genre = null, string sortBy = null)
         {
-            return await _context.Books.ToListAsync();
+            var query = _context.Books.AsQueryable();
+
+            if (!string.IsNullOrEmpty(author))
+            {
+                query = query.Where(b => b.Author.Contains(author.ToLower()));
+            }
+
+            if (!string.IsNullOrEmpty(genre))
+            {
+                query = query.Where(b => b.Genre.Contains(genre.ToLower()));
+            }
+
+            query = sortBy switch
+            {
+                "title" => query.OrderBy(b => b.Title),
+                "year" => query.OrderBy(b => b.Year),
+                "author" => query.OrderBy(b => b.Author),
+                _ => query.OrderBy(b => b.Id),
+            };
+            return await query.ToListAsync();
         }
+
+        
 
         // GET: api/Books/5
         [HttpGet("{id}")]
