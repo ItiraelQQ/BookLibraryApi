@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\BookLibraryAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{59DEDD4D-D3A8-4FAE-8126-A941DC0112F1}|BookLibraryAPI\\BookLibraryAPI.csproj|c:\\users\\user\\source\\repos\\booklibraryapi\\booklibraryapi\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59DEDD4D-D3A8-4FAE-8126-A941DC0112F1}|BookLibraryAPI\\BookLibraryAPI.csproj|solutionrelative:booklibraryapi\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59DEDD4D-D3A8-4FAE-8126-A941DC0112F1}|BookLibraryAPI\\BookLibraryAPI.csproj|c:\\users\\user\\source\\repos\\booklibraryapi\\booklibraryapi\\mappings\\bookprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59DEDD4D-D3A8-4FAE-8126-A941DC0112F1}|BookLibraryAPI\\BookLibraryAPI.csproj|solutionrelative:booklibraryapi\\mappings\\bookprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59DEDD4D-D3A8-4FAE-8126-A941DC0112F1}|BookLibraryAPI\\BookLibraryAPI.csproj|c:\\users\\user\\source\\repos\\booklibraryapi\\booklibraryapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59DEDD4D-D3A8-4FAE-8126-A941DC0112F1}|BookLibraryAPI\\BookLibraryAPI.csproj|solutionrelative:booklibraryapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{59DEDD4D-D3A8-4FAE-8126-A941DC0112F1}|BookLibraryAPI\\BookLibraryAPI.csproj|c:\\users\\user\\source\\repos\\booklibraryapi\\booklibraryapi\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59DEDD4D-D3A8-4FAE-8126-A941DC0112F1}|BookLibraryAPI\\BookLibraryAPI.csproj|solutionrelative:booklibraryapi\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59DEDD4D-D3A8-4FAE-8126-A941DC0112F1}|BookLibraryAPI\\BookLibraryAPI.csproj|c:\\users\\user\\source\\repos\\booklibraryapi\\booklibraryapi\\models\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59DEDD4D-D3A8-4FAE-8126-A941DC0112F1}|BookLibraryAPI\\BookLibraryAPI.csproj|solutionrelative:booklibraryapi\\models\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59DEDD4D-D3A8-4FAE-8126-A941DC0112F1}|BookLibraryAPI\\BookLibraryAPI.csproj|c:\\users\\user\\source\\repos\\booklibraryapi\\booklibraryapi\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59DEDD4D-D3A8-4FAE-8126-A941DC0112F1}|BookLibraryAPI\\BookLibraryAPI.csproj|solutionrelative:booklibraryapi\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59DEDD4D-D3A8-4FAE-8126-A941DC0112F1}|BookLibraryAPI\\BookLibraryAPI.csproj|c:\\users\\user\\source\\repos\\booklibraryapi\\booklibraryapi\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59DEDD4D-D3A8-4FAE-8126-A941DC0112F1}|BookLibraryAPI\\BookLibraryAPI.csproj|solutionrelative:booklibraryapi\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,60 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BookProfile.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\BookLibraryAPI\\BookLibraryAPI\\Mappings\\BookProfile.cs",
-              "RelativeDocumentMoniker": "BookLibraryAPI\\Mappings\\BookProfile.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\BookLibraryAPI\\BookLibraryAPI\\Mappings\\BookProfile.cs",
-              "RelativeToolTip": "BookLibraryAPI\\Mappings\\BookProfile.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T12:33:19.828Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\BookLibraryAPI\\BookLibraryAPI\\Program.cs",
-              "RelativeDocumentMoniker": "BookLibraryAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\BookLibraryAPI\\BookLibraryAPI\\Program.cs",
-              "RelativeToolTip": "BookLibraryAPI\\Program.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABwAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T12:24:29.265Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BookDto.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\BookLibraryAPI\\BookLibraryAPI\\Models\\BookDto.cs",
-              "RelativeDocumentMoniker": "BookLibraryAPI\\Models\\BookDto.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\BookLibraryAPI\\BookLibraryAPI\\Models\\BookDto.cs",
-              "RelativeToolTip": "BookLibraryAPI\\Models\\BookDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T12:21:39.673Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BooksController.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\BookLibraryAPI\\BookLibraryAPI\\Controllers\\BooksController.cs",
-              "RelativeDocumentMoniker": "BookLibraryAPI\\Controllers\\BooksController.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\BookLibraryAPI\\BookLibraryAPI\\Controllers\\BooksController.cs",
-              "RelativeToolTip": "BookLibraryAPI\\Controllers\\BooksController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:46:42.941Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -97,16 +37,46 @@
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "Review.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\BookLibraryAPI\\BookLibraryAPI\\Models\\Review.cs",
+              "RelativeDocumentMoniker": "BookLibraryAPI\\Models\\Review.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\BookLibraryAPI\\BookLibraryAPI\\Models\\Review.cs",
+              "RelativeToolTip": "BookLibraryAPI\\Models\\Review.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T14:20:41.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\BookLibraryAPI\\BookLibraryAPI\\Models\\Book.cs",
               "RelativeDocumentMoniker": "BookLibraryAPI\\Models\\Book.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\BookLibraryAPI\\BookLibraryAPI\\Models\\Book.cs",
               "RelativeToolTip": "BookLibraryAPI\\Models\\Book.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:42:53.647Z",
+              "WhenOpened": "2024-10-15T13:45:23.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\BookLibraryAPI\\BookLibraryAPI\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "BookLibraryAPI\\Controllers\\BooksController.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\BookLibraryAPI\\BookLibraryAPI\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "BookLibraryAPI\\Controllers\\BooksController.cs",
+              "ViewState": "AQIAAGkAAAAAAAAAAAA4wH8AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T13:42:17.162Z",
               "EditorCaption": ""
             }
           ]

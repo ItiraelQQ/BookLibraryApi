@@ -18,7 +18,7 @@ namespace BookLibraryAPI.Controllers
 
         // GET: api/books
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Book>>> GetBooks(string author = null, string genre = null, string sortBy = null)
+        public async Task<ActionResult<IEnumerable<Book>>> GetBooks(string author = null, string genre = null, int? yearFrom = null, int? YearTo = null, string sortBy = null)
         {
             var query = _context.Books.AsQueryable();
 
@@ -30,6 +30,16 @@ namespace BookLibraryAPI.Controllers
             if (!string.IsNullOrEmpty(genre))
             {
                 query = query.Where(b => b.Genre.Contains(genre.ToLower()));
+            }
+
+            if (yearFrom.HasValue)
+            {
+                query = query.Where(b => b.Year >= yearFrom.Value);
+            }
+
+            if (YearTo.HasValue)
+            {
+                query = query.Where(b => b.Year <= YearTo.Value);
             }
 
             query = sortBy switch
@@ -101,6 +111,18 @@ namespace BookLibraryAPI.Controllers
                 return NotFound();
             }
             _context.Books.Remove(book);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
+        [HttpPatch("{id}/rating")]
+        public async Task<IActionResult> UpdateRating(int id, double rating)
+        {
+            var book = await _context.Books.FindAsync(id);
+            if (book == null) return NotFound();
+
+            book.Rating = rating;
             await _context.SaveChangesAsync();
 
             return NoContent();
