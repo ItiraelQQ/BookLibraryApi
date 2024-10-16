@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.OpenApi.Models;
+using BookLibraryAPI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,9 +13,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "BookLibraryAPI", Version = "v1.0.5" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "BookLibraryAPI", Version = "v1.1" });
 
-    // Настройка авторизации в Swagger
     var securityScheme = new OpenApiSecurityScheme
     {
         Name = "Authorization",
@@ -59,6 +59,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
         };
     });
+
+builder.Services.AddHttpClient<GoogleBooksService>();
 
 var app = builder.Build();
 

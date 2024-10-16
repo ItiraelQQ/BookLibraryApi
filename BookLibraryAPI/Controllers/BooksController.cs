@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using BookLibraryAPI.Models;
 using BookLibraryAPI.Mappings;
 using Microsoft.AspNetCore.Authorization;
+using BookLibraryAPI.Services;
 
 namespace BookLibraryAPI.Controllers
 {
@@ -11,10 +12,12 @@ namespace BookLibraryAPI.Controllers
     public class BooksController : ControllerBase
     {
         private readonly AppDbContext _context;
+        private readonly GoogleBooksService _googleBooksService;
 
-        public BooksController(AppDbContext context)
+        public BooksController(AppDbContext context, GoogleBooksService googleBooksService)
         {
             _context = context;
+            _googleBooksService = googleBooksService;
         }
 
         // GET: api/books
@@ -70,10 +73,27 @@ namespace BookLibraryAPI.Controllers
         // POST: api/Books
         [Authorize(Roles = "Admin")]
         [HttpPost]
-        public async Task<ActionResult<Book>> PostBook(Book book)
+        public async Task<ActionResult<Book>> PostBook(BookDto bookDto)
         {
+            var book = new Book
+            {
+                Title = bookDto.Title,
+                Author = bookDto.Author,
+                Genre = bookDto.Genre,
+                Year = bookDto.Year
+            };
+
+            var googleBook = await _googleBooksService.SearchBooksAsync(bookDto.Title);
+
+            if (googleBook.Items != null && googleBook.Items.Count > 0)
+            {
+                var volumeInfo = googleBook.Items[0].VolumeInfo;
+                book.PosterUrl = volumeInfo.ImageLinks?.Thumbnail;
+            }
+
             _context.Books.Add(book);
             await _context.SaveChangesAsync();
+
             return CreatedAtAction(nameof(GetBook), new { id = book.Id }, book);
         }
 
