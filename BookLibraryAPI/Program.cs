@@ -12,7 +12,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "BookLibraryAPI", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "BookLibraryAPI", Version = "v1.0.5" });
 
     // Настройка авторизации в Swagger
     var securityScheme = new OpenApiSecurityScheme

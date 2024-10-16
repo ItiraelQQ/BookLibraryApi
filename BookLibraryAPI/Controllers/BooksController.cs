@@ -68,7 +68,7 @@ namespace BookLibraryAPI.Controllers
         }
 
         // POST: api/Books
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public async Task<ActionResult<Book>> PostBook(Book book)
         {
@@ -105,7 +105,7 @@ namespace BookLibraryAPI.Controllers
         }
 
         // DELETE: api/Books/5
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteBook(int id)
         {

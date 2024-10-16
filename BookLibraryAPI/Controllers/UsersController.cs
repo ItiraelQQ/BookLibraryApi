@@ -24,10 +24,27 @@ namespace BookLibraryAPI.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register(UserDto userDto)
         {
-            var user = new User { UserName = userDto.UserName, Password = BCrypt.Net.BCrypt.HashPassword(userDto.Password) };
+            var user = new User { 
+                UserName = userDto.UserName, 
+                Password = BCrypt.Net.BCrypt.HashPassword(userDto.Password),
+                Role = "User" //роль по умолчанию
+            };
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
             return Ok(new { message = "User registered successfully"});
+        }
+        [HttpPost("registerAdmin")]
+        public async Task<IActionResult> RegisterAdmin(UserDto userDto)
+        {
+            var user = new User
+            {
+                UserName = userDto.UserName,
+                Password = BCrypt.Net.BCrypt.HashPassword(userDto.Password),
+                Role = "Admin" 
+            };
+            _context.Users.Add(user);
+            await _context.SaveChangesAsync();
+            return Ok(new { message = "Admin registered successfully" });
         }
 
         [HttpPost("login")]
