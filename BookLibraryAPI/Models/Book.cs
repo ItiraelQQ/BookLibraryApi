@@ -15,5 +15,6 @@ namespace BookLibraryAPI.Models
         public double Rating { get; set; }
 
         public ICollection<Review> Reviews { get; set; }
+        public string PosterUrl { get; set; }
     }
 }
