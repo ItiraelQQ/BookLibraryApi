@@ -144,3 +144,8 @@ C:\Users\user\source\repos\BookLibraryAPI\BookLibraryAPI\bin\Debug\net8.0\runtim
 C:\Users\user\source\repos\BookLibraryAPI\BookLibraryAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\user\source\repos\BookLibraryAPI\BookLibraryAPI\obj\Debug\net8.0\BookLibraryAPI.sourcelink.json
 C:\Users\user\source\repos\BookLibraryAPI\BookLibraryAPI\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\user\source\repos\BookLibraryAPI\BookLibraryAPI\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\user\source\repos\BookLibraryAPI\BookLibraryAPI\bin\Debug\net8.0\JWT.dll
+C:\Users\user\source\repos\BookLibraryAPI\BookLibraryAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\user\source\repos\BookLibraryAPI\BookLibraryAPI\bin\Debug\net8.0\Microsoft.Bcl.TimeProvider.dll
+C:\Users\user\source\repos\BookLibraryAPI\BookLibraryAPI\bin\Debug\net8.0\Newtonsoft.Json.dll

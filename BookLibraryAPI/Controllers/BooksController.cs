@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using BookLibraryAPI.Models;
 using BookLibraryAPI.Mappings;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BookLibraryAPI.Controllers
 {
@@ -67,6 +68,7 @@ namespace BookLibraryAPI.Controllers
         }
 
         // POST: api/Books
+        [Authorize]
         [HttpPost]
         public async Task<ActionResult<Book>> PostBook(Book book)
         {
@@ -76,6 +78,7 @@ namespace BookLibraryAPI.Controllers
         }
 
         // PUT: api/Books/5
+        [Authorize]
         [HttpPut("{id}")]
         public async Task<IActionResult> PutBook(int id, Book book)
         {
@@ -102,6 +105,7 @@ namespace BookLibraryAPI.Controllers
         }
 
         // DELETE: api/Books/5
+        [Authorize]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteBook(int id)
         {
